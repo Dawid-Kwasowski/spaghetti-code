@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fafafa;
+}
+
+@media (min-width: 375px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 150px (50px)[10];
+        grid-template-rows: 150px repeat(10, 50px);
+  }
+}
+
+.wrapper__header {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 30px 20px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.header {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  line-height: 1.5;
+}
+
+.header__slogan {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #4c4e61;
+}
+
+.header__slogan--light {
+  font-weight: 200;
+  color: #a3a5ae;
+}
+
+.header__intro {
+  margin: 10px 0;
+  text-align: center;
+  font-size: .9rem;
+  color: #a3a5ae;
+}
+
+.card {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 230px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.295);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.295);
+  border-radius: 5px;
+  margin: 20px 0 20px 0;
+  padding: 30px;
+  position: relative;
+}
+
+.card__title {
+  color: #4c4e61;
+}
+
+.card__description {
+  color: #a3a5ae;
+}
+
+.card__image {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.card--cyan {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  border-top: 4px solid #45d3d3;
+}
+
+.card--red {
+  border-top: 4px solid #ea5353;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.card--orange {
+  border-top: 4px solid #fcaf4a;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.card--blue {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  border-top: 4px solid #549ef2;
+}
+
+footer {
+  grid-row: -1;
+}
+/*# sourceMappingURL=main.css.map */
